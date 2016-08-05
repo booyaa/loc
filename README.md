@@ -4,8 +4,9 @@ A utility to display your current latitude and longtitude.
 
 # Installation
 
-
-Binaries to follow shortly once I've setup the automation.
+Binaries to follow shortly once I've setup the automation. The underlying
+library ([wifiscanner](https://github.com/booyaa/wifiscanner)) only supports
+OSX / MacOS. So this utility is also limited by this.
 
 ```
 git clone https://github.com/booyaa/loc.git
