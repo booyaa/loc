@@ -1,0 +1,12 @@
+[package]
+name = "loc"
+version = "0.1.0"
+authors = ["booyaa <booyaabooyaabooyaa@gmail.com>"]
+description = "A utility to display your current longtitude and latitude"
+repository = "https://github.com/booyaa/loc"
+readme = "README.md"
+keywords = ["geolocation","gps"]
+license = "Apache-2.0"
+
+[dependencies]
+wifilocation = "0.1.0"
