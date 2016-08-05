@@ -8,7 +8,7 @@ A utility to display your current latitude and longtitude.
 Binaries to follow shortly once I've setup the automation.
 
 ```
-git clone https://github.com/booyaa/loc
+git clone https://github.com/booyaa/loc.git
 cd loc
 cargo install
 ```
