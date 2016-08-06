@@ -9,4 +9,4 @@ keywords = ["geolocation","gps"]
 license = "Apache-2.0"
 
 [dependencies]
-wifilocation = "0.1.0"
+wifilocation = "0.2.0"

@@ -2,8 +2,13 @@
 name = "loc"
 version = "0.1.0"
 dependencies = [
- "wifilocation 0.1.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "wifilocation 0.2.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
+
+[[package]]
+name = "aster"
+version = "0.22.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
 name = "curl"
@@ -105,6 +110,27 @@ dependencies = [
 ]
 
 [[package]]
+name = "quasi"
+version = "0.16.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
+name = "quasi_codegen"
+version = "0.16.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "aster 0.22.1 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "quasi_macros"
+version = "0.16.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "quasi_codegen 0.16.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
 name = "rand"
 version = "0.3.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -118,6 +144,22 @@ version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
+name = "serde_codegen"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "aster 0.22.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "quasi 0.16.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "quasi_macros 0.16.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde_codegen_internals 0.5.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "serde_codegen_internals"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+
+[[package]]
 name = "serde_json"
 version = "0.8.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -126,6 +168,14 @@ dependencies = [
  "itoa 0.1.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "num-traits 0.1.34 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
+]
+
+[[package]]
+name = "serde_macros"
+version = "0.8.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+dependencies = [
+ "serde_codegen 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
 [[package]]
@@ -147,12 +197,13 @@ dependencies = [
 
 [[package]]
 name = "wifilocation"
-version = "0.1.0"
+version = "0.2.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 dependencies = [
  "curl 0.3.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "serde_json 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
+ "serde_macros 0.8.0 (registry+https://github.com/rust-lang/crates.io-index)",
  "wifiscanner 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
 ]
 
